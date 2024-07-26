@@ -43,19 +43,19 @@
           id="navbarNav"
         >
           <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
+            <li class="nav-item">
+              <a class="nav-link" href="#about-me"
                 >About me<span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Skills</a>
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact-me">Contact</a>
             </li>
           </ul>
         </div>
@@ -67,10 +67,11 @@
         <img src="./assets/avatar.svg" alt="" />
       </div>
       <h1 class="mb-0">I'm Matheus Ferreira</h1>
+      <h2>Full-stack developer, based in Brazil</h2>
       <span>Nice to meet you 👋</span>
       
       <div class="gradient-container section-container">
-        <section>
+        <section id="about-me">
           <h1>About me</h1>
           <p>I  started my studies in the university, learning how a computer works in a binary extraordinary communication, and I was fascinating since I was a
             child how everything digital understands a simple click in a button, like a TV controller or in the video games, so I want to start in the development
@@ -87,7 +88,7 @@
         </div>
 
       <div class="gradient-container section-container">
-        <section>
+        <section  id="projects">
           <h1>My projects</h1>
           <div class="content-project-container">
  
@@ -179,20 +180,92 @@
       </div>
 
       <div class="gradient-container section-container">
-        <section>
+        <section  id="skills">
           <h1>Skills</h1>
+          <div class="skill-section-container">
+
+            <div class="skill-card">
+              <img src="./assets/frontend.svg" class="skill-icon" alt="">
+              <h2>Front End</h2>
+              <ul class="skills-list">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Bootstrap</li>
+              <li>ReactJS</li>
+            </ul>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <img src="./assets/backend.svg" class="skill-icon" alt="">
+          <h2>Back End</h2>
+          <ul class="skills-list">
+            <li>NodeJS</li>
+            <li>PostgreSQL</li>
+            <li>MongoDB</li>
+            <li>API REST</li>
+            <li>JSON Web Token</li>
+            <li>ExpressJS</li>
+          </ul>
+        </div>
+          <div class="skill-card">
+            <img src="./assets/tools.svg" class="skill-icon" alt="">
+            <h2>Tools and Languages</h2>
+            <ul class="skills-list">
+              <li>Javascript</li>
+              <li>Typescript</li>
+              <li>VS Code</li>
+              <li>NPM / Yarn</li>
+              <li>Github</li>
+              <li>Figma</li>
+            </ul>
+          </div>
+        </div>
         </section>
       </div>
-
+      
       <div class="gradient-container section-container">
-        <section>
+        <section  id="contact-me">
           <h1>Contact</h1>
+          <div class="contact-section-container">
+            <div class="contact-info-container">
+              <h1>Contact info</h1>
+              <div class="contact-row"><img src="./assets/phone.svg" class="img-contact-info" alt=""><span> +55 (12) 345678-91234</span></div>
+              <div class="contact-row"><img src="./assets/email.svg" class="img-contact-info" alt=""><span> email@youremail.com</span></div>
+              <div class="contact-row"><img src="./assets/LinkedIn.svg" class="img-contact-info" alt=""><span>linkedin.com/yourLinkedinId</span></div>
+            </div>
+            <div class="form-section">
+              <h1>Send me an email</h1>
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-3">
+                    <label for="inputFirstName">First Name</label>
+                    <input type="text" class="form-control" id="inputFirstName" placeholder="First Name">
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="inputLastName">Last Name</label>
+                    <input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
+                  </div>
+                </div>
+            <div class="form-group">
+              <label for="inputEmail">Email</label>
+              <input type="email" class="form-control col-md-8" id="inpurtEmail" placeholder="youremail@email.com">
+            </div>
+            
+            <div class="form-group">
+              <label for="inputMessage">Message</label>
+              <textarea class="form-control" id="inputMessage" rows="3" placeholder="Text something amazing!"></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Send</button>
+          </form>
+        </div>
+        </div>
         </section>
       </div>
-
+      
     </main>
-
-    <footer class="mt-auto"></footer>
+    
+    <footer class="mt-auto"><img src="./assets/Vector.svg" alt=""></footer>
   </body>
   <script
     src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

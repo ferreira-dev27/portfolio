@@ -39,6 +39,10 @@ button {
   font-weight: 500;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .gradient-container {
   background: rgb(123, 66, 243);
   background: linear-gradient(
@@ -67,13 +71,14 @@ header {
 .navbar-nav {
   gap: 30px;
 }
-.nav-item.active {
-  font-weight: 800;
+
+.nav-item {
+  text-decoration: underline;
 }
 
-nav > ul > li:first-child {
+.nav-item:hover {
   font-weight: 800;
-  text-decoration: underline;
+  transition: 0.5s;
 }
 
 main {
@@ -214,6 +219,61 @@ main {
   color: #000;
   border: none;
   transition: 0.8s;
+}
+
+.contact-section-container {
+  padding: 10px 30px;
+  display: flex;
+  gap: 30px;
+  width: 100%;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 6px;
+}
+
+.img-contact-info {
+  width: 16px;
+}
+
+.form-section {
+  width: 100%;
+}
+
+form {
+  width: 100%;
+}
+
+.skill-section-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill-card > h2 {
+  font-weight: 700;
+}
+
+.skill-icon {
+  height: 60px;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
 }
 
 /* 
