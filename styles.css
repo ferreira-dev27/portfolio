@@ -81,6 +81,23 @@ header {
   transition: 0.5s;
 }
 
+.side-buttons {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 50%;
+}
+
+.side-buttons > a {
+  padding: 16px;
+  border: solid #fff 2px;
+}
+
+.side-buttons > a > img {
+  width: 35px;
+}
+
 main {
   color: white;
   display: flex;
