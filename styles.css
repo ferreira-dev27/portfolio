@@ -43,24 +43,7 @@ ul {
   list-style-type: none;
 }
 
-.gradient-container {
-  background: rgb(123, 66, 243);
-  background: linear-gradient(
-    135deg,
-    rgba(123, 66, 243, 1) 0%,
-    rgba(0, 255, 26, 1) 100%
-  );
-  height: fit-content;
-  width: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.avatar-container {
-  padding: 5px;
-  border-radius: 999px;
-}
+/*=========================== Header ===========================*/
 
 header {
   padding: 56px 160px;
@@ -98,6 +81,29 @@ header {
   width: 35px;
 }
 
+/* =========================== Introduce section =========================== */
+
+.gradient-container {
+  background: rgb(123, 66, 243);
+  background: linear-gradient(
+    135deg,
+    rgba(123, 66, 243, 1) 0%,
+    rgba(0, 255, 26, 1) 100%
+  );
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-container {
+  padding: 5px;
+  border-radius: 999px;
+}
+
+/* =========================== MAIN =========================== */
+
 main {
   color: white;
   display: flex;
@@ -130,6 +136,8 @@ main {
   padding: 10px 0;
 }
 
+/* =========================== PROJECT SECTION ===========================*/
+
 .content-project-container {
   display: flex;
   flex-wrap: wrap;
@@ -141,6 +149,7 @@ main {
   flex-direction: column;
   gap: 5px;
   margin-bottom: 20px;
+  width: 350px;
 }
 
 .project-img-container {
@@ -201,6 +210,10 @@ main {
   z-index: 1;
 }
 
+.project-btn {
+  font-size: 16px;
+}
+
 .btn-white {
   background: white;
   color: #000;
@@ -215,6 +228,7 @@ main {
 .language-cards {
   display: flex;
   gap: 9px;
+  flex-wrap: WRAP;
 }
 
 .language-card {
@@ -238,31 +252,7 @@ main {
   transition: 0.8s;
 }
 
-.contact-section-container {
-  padding: 10px 30px;
-  display: flex;
-  gap: 30px;
-  width: 100%;
-}
-
-.contact-row {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-  gap: 6px;
-}
-
-.img-contact-info {
-  width: 16px;
-}
-
-.form-section {
-  width: 100%;
-}
-
-form {
-  width: 100%;
-}
+/* =========================== SKILLS SECTION =========================== */
 
 .skill-section-container {
   display: flex;
@@ -293,6 +283,34 @@ form {
   gap: 5px;
 }
 
+/* =========================== CONTACT SECTION =========================== */
+
+.contact-section-container {
+  padding: 10px 30px;
+  display: flex;
+  gap: 30px;
+  width: 100%;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 6px;
+}
+
+.img-contact-info {
+  width: 16px;
+}
+
+.form-section {
+  width: 100%;
+}
+
+form {
+  width: 100%;
+}
+
 /* 
 .poppins-regular {
     font-family: "Poppins", sans-serif;
@@ -320,3 +338,9 @@ form {
   font-style: normal;
 }
    */
+
+@media (max-width: 600px) {
+  .facet_sidebar {
+    display: none;
+  }
+}
