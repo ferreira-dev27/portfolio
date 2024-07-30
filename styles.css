@@ -83,11 +83,6 @@ header {
   justify-content: center;
 }
 
-.avatar-container {
-  padding: 5px;
-  border-radius: 999px;
-}
-
 /* =========================== MAIN =========================== */
 
 main {
@@ -98,6 +93,17 @@ main {
   font-family: "Poppins", sans-serif;
   margin: 0 25px;
   font-weight: 500;
+}
+
+.avatar-container {
+  padding: 5px;
+  border-radius: 999px;
+}
+
+.avatar-container > img {
+  width: 150px;
+  height: 150px;
+  border-radius: 999px;
 }
 
 .section-container > section {
