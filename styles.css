@@ -67,6 +67,10 @@ header {
   transition: 0.5s;
 }
 
+.disable {
+  display: none;
+}
+
 /* =========================== Introduce section =========================== */
 
 .gradient-container {

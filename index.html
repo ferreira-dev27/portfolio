@@ -32,24 +32,7 @@
         })();
     </script>
     <!-- script with the function to send the email -->
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // these IDs from the previous steps
-                emailjs.sendForm('service_xi2o4t6', 'template_hhvgmqe', this)
-                    .then((res) => {
-                      document.querySelector("#inputFirstName").value = ""
-                      document.querySelector("#inputLastName").value = ""
-                      document.querySelector("#inputEmail").value = ""
-                      document.querySelector("#inputMessage").value = ""
-                        alert("Thanks for send me an email! 😊")
-                    }, (error) => {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
+    <script type="text/javascript" src="index.js"/>
   </head>
 
   <body>
@@ -142,12 +125,12 @@
                 <img src="https://raw.githubusercontent.com/Matheus3Ferreira/RedLight/main/frontend/public/assets/homepageProt.png" alt="printscreen of my project" class="project-img">
                 <div class="overlay-project"></div>
                 <div class="project-btns-container">
-                  <a href="#projects" target="_blank">
+                  <a class="link-project-site disable" href="#projects" target="_blank">
                   <button class="project-btn btn-white">
                       View live site
                     </button>
                   </a> 
-                <a href="https://github.com/Matheus3Ferreira/RedLight" target="_blank">
+                <a class="link-project-code" href="https://github.com/Matheus3Ferreira/RedLight" target="_blank">
                   <button class="project-btn btn-transparent">
                     View github code
                   </button>
@@ -171,12 +154,12 @@
                 <img src="./assets/project-example.svg" alt="printscreen of my project" class="project-img">
                 <div class="overlay-project"></div>
                 <div class="project-btns-container">
-                  <a href="#projects" target="_blank">
+                  <a class="link-project-site disable" href="#projects" target="_blank">
                   <button class="project-btn btn-white">
                       View live site
                     </button>
                   </a> 
-                <a href="https://github.com/Matheus3Ferreira/NLW-Valoriza" target="_blank">
+                <a class="link-project-code" href="https://github.com/Matheus3Ferreira/NLW-Valoriza" target="_blank">
                   <button class="project-btn btn-transparent">
                     View github code
                   </button>
@@ -197,12 +180,12 @@
                 <img src="https://github.com/Matheus3Ferreira/nlwEsports/blob/main/imgsREADME/demo.png?raw=true" alt="printscreen of my project" class="project-img">
                 <div class="overlay-project"></div>
                 <div class="project-btns-container">
-                  <a href="#projects" target="_blank">
+                  <a class="link-project-site disable" href="#projects" target="_blank">
                   <button class="project-btn btn-white">
                       View live site
                     </button>
                   </a> 
-                <a href="https://github.com/Matheus3Ferreira/nlwEsports/tree/main" target="_blank">
+                <a class="link-project-code" href="https://github.com/Matheus3Ferreira/nlwEsports/tree/main" target="_blank">
                   <button class="project-btn btn-transparent">
                     View github code
                   </button>
@@ -232,12 +215,12 @@
                 <img src="./assets/project-example.svg" alt="printscreen of my project" class="project-img">
                 <div class="overlay-project"></div>
                 <div class="project-btns-container">
-                  <a href="#projects" target="_blank">
+                  <a class="link-project-site disable" href="#projects" target="_blank">
                   <button class="project-btn btn-white">
                       View live site
                     </button>
                   </a> 
-                <a href="https://github.com/Matheus3Ferreira/shortinG-ecommerce" target="_blank">
+                <a class="link-project-code" href="https://github.com/Matheus3Ferreira/shortinG-ecommerce" target="_blank">
                   <button class="project-btn btn-transparent">
                     View github code
                   </button>
